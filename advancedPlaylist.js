@@ -41,7 +41,7 @@ function updateDurationDisplay(currentSeconds, totalSeconds) {
 playButton.addEventListener('click', () => {
     if (audio.paused) {
         audio.play();
-        playButton.innerText = 'll';
+        playButton.innerText = 'll'; /*the font i was using makes this look like the pause button.*/
         const interval = setInterval(() => {
             if (!audio.paused) {
                 durationSlider.value = Math.round(audio.currentTime);
